@@ -1,0 +1,106 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 22px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 350px;
+  height: 65% !important;
+  /* margin-top: -187px; */
+  box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  padding-top: 51px;
+  position: fixed;
+  top: 33%;
+  left: 40%;
+}
+.seperator {
+  border-color: #6eecb7 !important;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+.btn-transfer {
+  margin: 26px 0;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #9eda93, #22cba8);
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  min-width: 60%;
+}
+.stats span.first {
+  border-right: 1px solid #eee;
+}
+
+.attributes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+}
+.cp-text {
+  padding-right: 10px;
+  border-right: 1px solid #eee;
+  margin: 0;
+}
+.cp-text:last-child {
+  border: none;
+}
+.player-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  text-align: center;
+}
+.data-container p {
+  margin-bottom: 0;
+}
+
+#update_name,
+#update_candy_title #update_name {
+  text-transform: capitalize;
+}
+.img_size {
+  width: 170px;
+  margin-top: -111%;
+  margin-left: 7%;
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vh;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+
+  width: 0px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.homepage {
+  margin-left: 16%;
+  height: 90vh;
+}

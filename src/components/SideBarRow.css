@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,300&display=swap");
+.sidebar_row {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: 192px;
+  padding: 10px 20px;
+}
+.icon_img {
+  color: #606060;
+  font-size: 22px !important;
+  width: 50px;
+  padding-bottom: 22px;
+  margin-top: 22px;
+}
+.sidebarRow_title {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.sidebar_row:hover {
+  background-color: #2d313d;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 15px;
+
+  width: 250px;
+}
