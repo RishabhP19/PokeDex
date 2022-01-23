@@ -6,7 +6,7 @@ import Spinner from "./Spinner";
 const Pokemon = (props) => {
   const [allPokemons, setAllPokemons] = useState([]);
   const [loadMore, setLoadMore] = useState(
-    "https://pokeapi.co/api/v2/pokemon?limit=12"
+    "https://pokeapi.co/api/v2/pokemon?limit=50"
   );
   const [count, setcount] = useState(0);
 
@@ -62,23 +62,27 @@ const Pokemon = (props) => {
           <div className="row">
             {allPokemons.map((pokemonStats) => {
               return (
-                <div className="col-md-3 my-2" key={pokemonStats.id}>
-                  <PokemonCardD
-                    id={pokemonStats.id}
-                    image={pokemonStats.sprites.other.dream_world.front_default}
-                    name={pokemonStats.name}
-                    type={pokemonStats.types[0].type.name}
-                    hp1={Math.floor(
-                      Math.random() * pokemonStats.stats[0].base_stat + 1
-                    )}
-                    hp2={pokemonStats.stats[0].base_stat}
-                    xp={pokemonStats.base_experience}
-                    weight={pokemonStats.weight}
-                    height={pokemonStats.height}
-                    stardust={Math.floor(Math.random() * 10000 + 1)}
-                    candy={Math.floor(Math.random() * 200 + 1)}
-                  />
-                </div>
+                pokemonStats.name.includes(props.filterName) && (
+                  <div className="col-md-3 my-2" key={pokemonStats.id}>
+                    <PokemonCardD
+                      id={pokemonStats.id}
+                      image={
+                        pokemonStats.sprites.other.dream_world.front_default
+                      }
+                      name={pokemonStats.name}
+                      type={pokemonStats.types[0].type.name}
+                      hp1={Math.floor(
+                        Math.random() * pokemonStats.stats[0].base_stat + 1
+                      )}
+                      hp2={pokemonStats.stats[0].base_stat}
+                      xp={pokemonStats.base_experience}
+                      weight={pokemonStats.weight}
+                      height={pokemonStats.height}
+                      stardust={Math.floor(Math.random() * 10000 + 1)}
+                      candy={Math.floor(Math.random() * 200 + 1)}
+                    />
+                  </div>
+                )
               );
             })}
           </div>
