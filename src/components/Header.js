@@ -9,11 +9,9 @@ import Ghost from "./img/Gost.png";
 import Grass from "./img/Grass.png";
 import Rock from "./img/Rock.png";
 import Water from "./img/Water1.png";
-
 import "./Header.css";
 import "./Sidebar.css";
 import SideBarRow from "./SideBarRow";
-import Search from "./Search";
 
 export function Header(props) {
   const toggleSidebar = () => {
@@ -38,11 +36,16 @@ export function Header(props) {
             <img className="header_logo" src={PokemonLogo} alt="PokemonLogo" />
           </div>
           <div className="container">
-            <Search />
+            <form>
+              <button type="submit" onClick={(e) => ""}>
+                Search
+              </button>
+              <input type="search" placeholder="Search..." />
+            </form>
           </div>
         </div>
         <div className="sidebar">
-          <SideBarRow icon={Water} title="Water Type" to="/water" />
+          <SideBarRow icon={Water} title="Water Type" to="/" />
           <SideBarRow icon={Rock} title="Rock Type" to="/rock" />
           <SideBarRow icon={Grass} title="Grass Type" to="/grass" />
           <SideBarRow icon={Ghost} title="Ghost Type" to="/ghost" />
@@ -51,7 +54,7 @@ export function Header(props) {
           <SideBarRow icon={Bug} title="Bug Type" to="/bug" />
         </div>
         <div className="mini_sidebar">
-          <Link className="miniDiv" to="/water">
+          <Link className="miniDiv" to="/">
             <img src={Water} alt="Water" className="icon_img" />
           </Link>
           <Link className="miniDiv" to="/rock">
