@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/PokeDex/static/css/main.7eca3338.chunk.css",
+    "main.js": "/PokeDex/static/js/main.7a7b9c7a.chunk.js",
+    "main.js.map": "/PokeDex/static/js/main.7a7b9c7a.chunk.js.map",
+    "runtime-main.js": "/PokeDex/static/js/runtime-main.9515882b.js",
+    "runtime-main.js.map": "/PokeDex/static/js/runtime-main.9515882b.js.map",
+    "static/js/2.f60bd7ae.chunk.js": "/PokeDex/static/js/2.f60bd7ae.chunk.js",
+    "static/js/2.f60bd7ae.chunk.js.map": "/PokeDex/static/js/2.f60bd7ae.chunk.js.map",
+    "index.html": "/PokeDex/index.html",
+    "static/css/main.7eca3338.chunk.css.map": "/PokeDex/static/css/main.7eca3338.chunk.css.map",
+    "static/js/2.f60bd7ae.chunk.js.LICENSE.txt": "/PokeDex/static/js/2.f60bd7ae.chunk.js.LICENSE.txt",
+    "static/media/Bug.167802fd.png": "/PokeDex/static/media/Bug.167802fd.png",
+    "static/media/Electric.2e3808d7.png": "/PokeDex/static/media/Electric.2e3808d7.png",
+    "static/media/Fire.3277d77f.png": "/PokeDex/static/media/Fire.3277d77f.png",
+    "static/media/Gost.7452d549.png": "/PokeDex/static/media/Gost.7452d549.png",
+    "static/media/Grass.bbd3f68a.png": "/PokeDex/static/media/Grass.bbd3f68a.png",
+    "static/media/PokemonLogo.3fd1da72.png": "/PokeDex/static/media/PokemonLogo.3fd1da72.png",
+    "static/media/Rock.06ce1a1f.png": "/PokeDex/static/media/Rock.06ce1a1f.png",
+    "static/media/Water1.2fcb40f7.png": "/PokeDex/static/media/Water1.2fcb40f7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9515882b.js",
+    "static/js/2.f60bd7ae.chunk.js",
+    "static/css/main.7eca3338.chunk.css",
+    "static/js/main.7a7b9c7a.chunk.js"
+  ]
+}
