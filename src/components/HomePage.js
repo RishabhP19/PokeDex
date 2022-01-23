@@ -12,28 +12,28 @@ function HomePage(props) {
         <LoadingBar height={3} color="#f11946" progress={progress} />
         <Switch>
           <Route exact path="/">
-            <Pokemon setProgress={setProgress} type="/type" key="all" />
+            <Pokemon setProgress={setProgress} type="grass" key="all" />
           </Route>
           <Route exact path="/water">
-            <Pokemon setProgress={setProgress} type="/type/11" key="water" />
+            <Pokemon setProgress={setProgress} type="grass" key="water" />
           </Route>
           <Route exact path="/rock">
-            <Pokemon setProgress={setProgress} type="/type/6" key="rock" />
+            <Pokemon setProgress={setProgress} type="grass" key="rock" />
           </Route>
           <Route exact path="/grass">
-            <Pokemon setProgress={setProgress} type="/type/12" key="grass" />
+            <Pokemon setProgress={setProgress} type="grass" key="grass" />
           </Route>
           <Route exact path="/ghost">
-            <Pokemon setProgress={setProgress} type="/type/8" key="ghost" />
+            <Pokemon setProgress={setProgress} type="grass" key="ghost" />
           </Route>
           <Route exact path="/fire">
-            <Pokemon setProgress={setProgress} type="/type/10" key="fire" />
+            <Pokemon setProgress={setProgress} type="grass" key="fire" />
           </Route>
           <Route exact path="/electric">
-            <Pokemon setProgress={setProgress} type="/type/13" key="electric" />
+            <Pokemon setProgress={setProgress} type="grass" key="electric" />
           </Route>
           <Route exact path="/bug">
-            <Pokemon setProgress={setProgress} type="/type/7" key="bug" />
+            <Pokemon setProgress={setProgress} type="grass" key="bug" />
           </Route>
         </Switch>
       </div>

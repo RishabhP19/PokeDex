@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./main.css";
 
 const PokemonCardD = ({
@@ -29,10 +28,12 @@ const PokemonCardD = ({
   return (
     <>
       <div onClick={toggleModal} className={style}>
-        <img src={image} alt={name} />
-        <div className="detail-wrapper">
-          <h3 id="update_name">{name}</h3>
-          <small>Type: {type}</small>
+        <div className="img-container">
+          <img src={image} alt={name} />
+          <div className="detail-wrapper">
+            <h3 id="update_name">{name}</h3>
+            <small>Type: {type}</small>
+          </div>
         </div>
       </div>
 

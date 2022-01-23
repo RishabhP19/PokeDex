@@ -9,7 +9,7 @@ body.active-modal {
   border-radius: 10px;
   background-color: #fff;
   width: 350px;
-  height: 65% !important;
+  height: 67% !important;
   /* margin-top: -187px; */
   box-shadow: 0 0 8px rgb(0 0 0 / 30%);
   padding-top: 51px;
@@ -72,7 +72,7 @@ body.active-modal {
 }
 .img_size {
   width: 170px;
-  margin-top: -111%;
+  margin-top: -95%;
   margin-left: 7%;
 }
 

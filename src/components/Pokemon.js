@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import PokemonCardD from "./PokemonCardD";
-
 import InfiniteScroll from "react-infinite-scroll-component";
 import Spinner from "./Spinner";
 
@@ -24,14 +23,18 @@ const Pokemon = (props) => {
     props.setProgress(100);
 
     function createPokemonObject(results) {
+      props.setProgress(10);
       results.forEach(async (pokemon) => {
         const res = await fetch(
           `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
         );
+        props.setProgress(30);
         const data = await res.json();
+        props.setProgress(70);
         setAllPokemons((currentList) => [...currentList, data]);
         await allPokemons.sort((a, b) => a.id - b.id);
       });
+      props.setProgress(100);
     }
     createPokemonObject(data.results);
   };
