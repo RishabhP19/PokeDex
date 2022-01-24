@@ -62,7 +62,8 @@ const Pokemon = (props) => {
           <div className="row">
             {allPokemons.map((pokemonStats) => {
               return (
-                pokemonStats.name.includes(props.filterName) && (
+                pokemonStats.name.includes(props.filterName) &&
+                pokemonStats.types[0].type.name.includes(props.filterType) && (
                   <div className="col-md-3 my-2" key={pokemonStats.id}>
                     <PokemonCardD
                       id={pokemonStats.id}
