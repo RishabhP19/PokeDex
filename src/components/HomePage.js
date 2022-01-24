@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LoadingBar from "react-top-loading-bar";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 import "./main.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import PokemonLogo from "./img/PokemonLogo.png";
@@ -41,7 +41,7 @@ function HomePage(props) {
   };
 
   return (
-    <Router>
+    <div>
       <div className="header">
         <div className="header_left">
           <div onClick={toggleSidebar}>
@@ -62,131 +62,121 @@ function HomePage(props) {
           </div>
 
           <div className="sidebar">
-            <Link
-              className="sidebar_row"
-              onClick={() => handlefilterType("")}
-              to="/PokeDex"
-            >
+            <div className="sidebar_row" onClick={() => handlefilterType("")}>
               <img src={All} alt="All Type" className="icon_img" />
               <h2 className="sidebarRow_title">All Type</h2>
-            </Link>
-            <Link
+            </div>
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("water")}
-              to="/water"
             >
               <img src={Water} alt="Water Type" className="icon_img" />
               <h2 className="sidebarRow_title">Water Type</h2>
-            </Link>
+            </div>
 
-            <Link
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("grass")}
-              to="/grass"
             >
               <img src={Grass} alt="Rock Type" className="icon_img" />
               <h2 className="sidebarRow_title">Grass Type</h2>
-            </Link>
+            </div>
 
-            <Link
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("fire")}
-              to="/fire"
             >
               <img src={Fire} alt="Fire Type" className="icon_img" />
               <h2 className="sidebarRow_title">Fire Type</h2>
-            </Link>
-            <Link
+            </div>
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("electric")}
-              to="/electric"
             >
               <img src={Electric} alt="Electric Type" className="icon_img" />
               <h2 className="sidebarRow_title">Electric Type</h2>
-            </Link>
-            <Link
+            </div>
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("bug")}
-              to="/bug"
             >
               <img src={Bug} alt="Electric Type" className="icon_img" />
               <h2 className="sidebarRow_title">Bug Type</h2>
-            </Link>
-            <Link
+            </div>
+            <div
               className="sidebar_row"
               onClick={() => handlefilterType("rock")}
-              to="/rock"
             >
               <img src={Rock} alt="Rock Type" className="icon_img" />
               <h2 className="sidebarRow_title">Rock Type</h2>
-            </Link>
+            </div>
           </div>
           <div className="mini_sidebar">
-            <Link className="miniDiv">
+            <div className="miniDiv">
               <img
                 src={All}
                 alt="Water"
                 onClick={() => handlefilterType("")}
                 className="icon_img"
               />
-            </Link>
-            <Link className="miniDiv">
+            </div>
+            <div className="miniDiv">
               <img
                 src={Water}
                 alt="Water"
                 onClick={() => handlefilterType("water")}
                 className="icon_img"
               />
-            </Link>
+            </div>
 
-            <Link className="miniDiv">
+            <div className="miniDiv">
               <img
                 src={Grass}
                 alt="Grass"
                 onClick={() => handlefilterType("grass")}
                 className="icon_img"
               />
-            </Link>
+            </div>
 
-            <Link className="miniDiv">
+            <div className="miniDiv">
               <img
                 src={Fire}
                 alt="Fire"
                 onClick={() => handlefilterType("fire")}
                 className="icon_img"
               />
-            </Link>
-            <Link className="miniDiv">
+            </div>
+            <div className="miniDiv">
               <img
                 src={Electric}
                 alt="Electric"
                 onClick={() => handlefilterType("electric")}
                 className="icon_img"
               />
-            </Link>
-            <Link className="miniDiv">
+            </div>
+            <div className="miniDiv">
               <img
                 src={Bug}
                 alt="Bug"
                 onClick={() => handlefilterType("bug")}
                 className="icon_img"
               />
-            </Link>
-            <Link className="miniDiv">
+            </div>
+            <div className="miniDiv">
               <img
                 src={Rock}
                 alt="Rock"
                 onClick={() => handlefilterType("rock")}
                 className="icon_img"
               />
-            </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className="homepage">
         <LoadingBar height={3} color="#f11946" progress={progress} />
-        <Switch>
-          <Route exact path="/PokeDex">
+        <div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -194,8 +184,8 @@ function HomePage(props) {
               key="water"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/water">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -203,8 +193,8 @@ function HomePage(props) {
               key="water2"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/rock">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -212,8 +202,8 @@ function HomePage(props) {
               key="rock"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/grass">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -221,8 +211,8 @@ function HomePage(props) {
               key="grass"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/ghost">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -230,8 +220,8 @@ function HomePage(props) {
               key="ghost"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/fire">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -239,8 +229,8 @@ function HomePage(props) {
               key="fire"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/electric">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -248,8 +238,8 @@ function HomePage(props) {
               key="electric"
               filterType={filterType}
             />
-          </Route>
-          <Route exact path="/bug">
+          </div>
+          <div>
             <Pokemon
               setProgress={setProgress}
               filterName={filter}
@@ -257,10 +247,10 @@ function HomePage(props) {
               key="bug"
               filterType={filterType}
             />
-          </Route>
-        </Switch>
+          </div>
+        </div>
       </div>
-    </Router>
+    </div>
   );
 }
 
