@@ -30,11 +30,37 @@
   transition: 0.5s ease;
   top: 71px;
 }
+@media only screen and (max-width: 600px) {
+  .mini_sidebar {
+    width: 17%;
+    position: fixed;
+    z-index: 50;
+    height: 92vh;
+    background-color: #3d3e47;
+    left: -100px;
+    transition: 0.5s ease;
+    top: 71px;
+  }
+  .sidebar {
+    width: 16%;
+    position: fixed;
+    top: 71px;
+    z-index: 50;
+    height: 92vh;
+    overflow-y: scroll;
+    overflow: hidden;
+    left: 0;
+    display: none;
+    background-color: #3d3e47;
+
+    transition: 0.5s ease;
+  }
+}
 .mini_sidebar.active {
   left: 0;
 }
 .miniDiv {
-  padding: 30px 10px;
+  padding: 0px 10px;
   color: #3d3e47;
 }
 .miniDiv:hover {

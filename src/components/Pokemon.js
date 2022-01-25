@@ -48,9 +48,14 @@ const Pokemon = (props) => {
     <>
       <h1
         className="text-center"
-        style={{ color: "white", margin: "35px 0px", marginTop: "90px" }}
+        style={{
+          color: "white",
+          margin: "35px 0px",
+          marginTop: "90px",
+          textTransform: "capitalize",
+        }}
       >
-        Pokemon Evolution
+        {props.filterType} Pokemons..
       </h1>
       <InfiniteScroll
         dataLength={allPokemons.length}

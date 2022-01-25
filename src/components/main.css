@@ -9,12 +9,12 @@ body.active-modal {
   border-radius: 10px;
   background-color: #fff;
   width: 350px;
-  height: 67% !important;
+  height: 69% !important;
   /* margin-top: -187px; */
   box-shadow: 0 0 8px rgb(0 0 0 / 30%);
   padding-top: 51px;
   position: fixed;
-  top: 33%;
+  top: 30%;
   left: 40%;
 }
 .seperator {
@@ -103,4 +103,34 @@ body.active-modal {
 .homepage {
   margin-left: 16%;
   height: 90vh;
+}
+@media only screen and (max-width: 600px) {
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 22px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 250px;
+    height: 55% !important;
+    /* margin-top: -187px; */
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    padding-top: 51px;
+    position: fixed;
+    top: 33%;
+    left: 25%;
+  }
+  .popup .content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    width: 0px;
+    height: 20px;
+    z-index: 2;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+  }
 }

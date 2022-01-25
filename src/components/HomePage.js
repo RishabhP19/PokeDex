@@ -56,7 +56,7 @@ function HomePage(props) {
               <input
                 type="search"
                 onChange={handleSearchChange}
-                placeholder="Search..."
+                placeholder="Search Pokemons..."
               />
             </form>
           </div>
