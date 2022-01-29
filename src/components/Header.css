@@ -18,11 +18,12 @@
   margin-left: 15px;
 }
 .head_menu {
-  height: 30px;
-  width: 25px;
+  font-size: 25px !important;
+
   color: white;
   cursor: pointer;
 }
+
 .header_left {
   display: flex;
   align-items: center;
@@ -81,7 +82,7 @@ input[type="search"]::placeholder {
   color: #bbb;
 }
 
-button[type="submit"] {
+.buttonSubmit {
   text-indent: -999px;
   overflow: hidden;
   width: 40px;
@@ -116,5 +117,11 @@ input[type="search"]:focus {
     border-radius: 25px;
     width: 175px;
     margin-left: 0px;
+  }
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
   }
 }

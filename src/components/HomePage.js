@@ -23,7 +23,7 @@ function HomePage(props) {
   const [filterType, setFilterType] = useState("");
 
   const handleSearchChange = (e) => {
-    setFilter(e.target.value);
+    setFilter(e.target.value.toLowerCase());
   };
   const handlefilterType = (element) => {
     setFilterType(element);
@@ -44,7 +44,7 @@ function HomePage(props) {
     <div>
       <div className="header">
         <div className="header_left">
-          <div onClick={toggleSidebar}>
+          <div className="head_menu_div" onClick={toggleSidebar}>
             <AiOutlineMenu className="head_menu" />
           </div>
           <img className="header_logo" src={PokemonLogo} alt="PokemonLogo" />
@@ -52,7 +52,7 @@ function HomePage(props) {
         <div className="parant_header">
           <div className="container">
             <form>
-              <button type="submit">Search</button>
+              <div className="buttonSubmit">Search</div>
               <input
                 type="search"
                 onChange={handleSearchChange}
@@ -182,69 +182,6 @@ function HomePage(props) {
               filterName={filter}
               type="grass"
               key="water"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="water2"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="rock"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="grass"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="ghost"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="fire"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="electric"
-              filterType={filterType}
-            />
-          </div>
-          <div>
-            <Pokemon
-              setProgress={setProgress}
-              filterName={filter}
-              type="grass"
-              key="bug"
               filterType={filterType}
             />
           </div>

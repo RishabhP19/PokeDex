@@ -16,11 +16,10 @@ const Pokemon = (props) => {
     props.setProgress(30);
     const data = await res.json();
     props.setProgress(70);
-
+    props.setProgress(100);
     setLoadMore(data.next);
 
     setcount(data.count);
-    props.setProgress(100);
 
     function createPokemonObject(results) {
       props.setProgress(10);

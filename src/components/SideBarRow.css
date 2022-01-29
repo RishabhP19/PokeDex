@@ -24,8 +24,34 @@
 .sidebar_row:hover {
   background-color: #2d313d;
   cursor: pointer;
-  border-radius: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   margin-left: 15px;
+  width: 205px;
+}
+.sidebar_row:hover ::after {
+  content: "";
+  position: absolute;
+  right: 0;
 
-  width: 250px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  margin-top: -70px;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px #2d313d;
+  pointer-events: none;
+}
+.sidebar_row:hover ::before {
+  content: "";
+  position: absolute;
+  right: 0;
+
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  margin-top: 53px;
+  border-radius: 50%;
+  box-shadow: 35px -25px 0px 10px #2d313d;
+  pointer-events: none;
 }
