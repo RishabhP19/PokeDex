@@ -134,7 +134,7 @@ body.active-modal {
     box-sizing: border-box;
   }
 }
-@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 1300px) {
   form {
     color: #555;
     background-color: white;
