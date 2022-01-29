@@ -163,3 +163,32 @@ body.active-modal {
     left: 40%;
   }
 }
+@media only screen and (min-height: 1500px) {
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 22px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 350px;
+    height: 20% !important;
+    margin-top: 29px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    padding-top: 64px;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+  }
+  form {
+    color: #555;
+    background-color: white;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+    /* width: 580px; */
+    margin-left: 60px;
+    margin-right: 252px;
+  }
+}
