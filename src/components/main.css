@@ -101,8 +101,14 @@ body.active-modal {
   box-sizing: border-box;
 }
 .homepage {
+  margin-left: 2%;
+  height: 90vh;
+  transition: 0.5s ease;
+}
+.homepage1 {
   margin-left: 16%;
   height: 90vh;
+  transition: 0.5s ease;
 }
 @media only screen and (max-width: 600px) {
   .detail-container {
@@ -132,6 +138,16 @@ body.active-modal {
     text-align: center;
     padding: 2px;
     box-sizing: border-box;
+  }
+  .homepage {
+    width: 100%;
+    transition: 0.5s ease;
+    margin-left: 50px;
+  }
+  .homepage1 {
+    width: 100%;
+    transition: 0.5s ease;
+    margin-left: 50px;
   }
 }
 @media only screen and (min-device-width: 700px) and (max-device-width: 1300px) {

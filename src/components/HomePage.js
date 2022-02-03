@@ -21,6 +21,7 @@ function HomePage(props) {
   const [progress, setProgress] = useState(0);
   const [filter, setFilter] = useState("");
   const [filterType, setFilterType] = useState("");
+  const [homeWidth, setHomeWidth] = useState(true);
 
   const handleSearchChange = (e) => {
     setFilter(e.target.value.toLowerCase());
@@ -30,6 +31,7 @@ function HomePage(props) {
   };
 
   const toggleSidebar = () => {
+    setHomeWidth(!homeWidth);
     const Sidebar = document.querySelector(".sidebar");
     const MiniSidebar = document.querySelector(".mini_sidebar");
     if (Sidebar) {
@@ -173,7 +175,7 @@ function HomePage(props) {
           </div>
         </div>
       </div>
-      <div className="homepage">
+      <div className={!homeWidth ? "homepage" : "homepage1"}>
         <LoadingBar height={3} color="#f11946" progress={progress} />
         <div>
           <div>
