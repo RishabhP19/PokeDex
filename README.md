@@ -1,5 +1,5 @@
 # PokeDex:
-User-friendly Chatting App for Every field (Professional & Informal)•	User-friendly Chatting App for Every field (Professional & Informal) .
+User -friendly App for fetching Pokemon Info.
 
 ## •	Tools/Technologies :scroll:
 ```sh
